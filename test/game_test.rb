@@ -11,7 +11,4 @@ class GameTest < Minitest::Test
     assert_equal Game, @game
   end
 
-  def test_it_can_verify_guess
-    assert_equal true, @game.guess("#{@sequence.colors}")
-  end
 end
