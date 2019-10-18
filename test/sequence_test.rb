@@ -34,9 +34,9 @@ class SequenceTest < Minitest::Test
 
   def test_it_can_verify_guess
     guess = @sequence.colors
-    assert_equal true, @sequence.correct_guess?("#{guess}")
+    assert_equal true, @sequence.correct_guess?(guess)
 
     @sequence.shuffle_colors
-    assert_equal false, @sequence.correct_guess?("#{guess}")
+    assert_equal false, @sequence.correct_guess?(guess)
   end
 end
