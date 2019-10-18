@@ -1,4 +1,5 @@
-require './test/test_helper'
+require 'minitest/autorun'
+require 'minitest/pride'
 
 class GameTest < Minitest::Test
   def setup
